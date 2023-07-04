@@ -17,6 +17,11 @@
     background-repeat: no-repeat;
     /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
 }
+.contact-img{
+    height: 450px;
+    background-image: url(./assets/smallholder-farmer-grant-money.png);
+    background-repeat: no-repeat;
+}
 p{
     font-family: 'Roboto', sans-serif;
 }
@@ -48,4 +53,17 @@ h2{
 }
 ul{
     font-family: 'Roboto', sans-serif;
+}
+.newsletter{
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 24px 4px;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    outline: none;
+}
+.newsletter-btn{
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 24px 4px;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
 }

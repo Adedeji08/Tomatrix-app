@@ -62,6 +62,7 @@ const AboutUs = () => {
       x: 100,
     },
   };
+
   return (
     <div className="pt-20">
       <motion.div ref={ref} animate={control} variants={list}>
@@ -69,7 +70,7 @@ const AboutUs = () => {
           <div className="about-img">
             <motion.h4
               variants={item1}
-              className="text-sm text-center pt-[20%] md:pt-[8%] font-semibold tracking-wider"
+               className="text-5xl text-center pt-[20%] md:pt-[8%] font-black text-opacity-100"
             >
               ABOUT US
             </motion.h4>
