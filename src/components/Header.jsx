@@ -18,21 +18,21 @@ const Header = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
+  const [bgColor, setBgColor] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // useEffect(() => {
-  //   const handleShadow = () => {
-  //     if (window.scrollY >= 90) {
-  //       setShadow(true);
-  //     } else {
-  //       setShadow(false);
-  //     }
-  //   };
-  //   window.addEventListener('scroll', handleShadow);
-  // }, []);
+  function changeNavbarBackgroundColor() {
+    if (window.scrollY >= 70) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeNavbarBackgroundColor);
 
   // MOTION FRAMER
   useEffect(() => {
@@ -87,9 +87,9 @@ const Header = () => {
   return (
     <div
       className={
-        shadow ? ` w-full  shadow-xl z-[100]` : `shadow  w-full h-20 z-[100]`
+        bgColor ? ` w-full fixed bg-red-200 shadow z-[100]` : `shadow fixed w-full h-20 z-[100]`
       }
-      style={{ background: `${navBg}` }}
+      // style={{ background: `${navBg}` }}
     >
       <div className="flex justify-between items-center w-full px-5 pt-3 2xl:px-16">
         <Link to="/">
@@ -101,7 +101,7 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="ml-10 text-sm font-semibold uppercase hover:border-b headers">
-              <Link to="/#about">About Us</Link>
+              <Link to="/aboutus">About Us</Link>
             </li>
             <li className="ml-10 text-sm font-semibold uppercase hover:border-b headers">
               <Link to="/#skills">Contact Us</Link>

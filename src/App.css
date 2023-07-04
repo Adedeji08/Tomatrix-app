@@ -11,10 +11,22 @@
     background-repeat: no-repeat;
     /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
 }
+.about-img{
+    height: 450px;
+    background-image: url(./assets/toma.jpg);
+    background-repeat: no-repeat;
+    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
 h4{
     font-family: 'Roboto', sans-serif;
 }
 h1{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
     font-family: 'Roboto', sans-serif;
 }
 .btn{
@@ -25,4 +37,15 @@ h1{
     background: #E92300;
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
-}   
+}  
+.mission-img{
+   margin-left: auto;
+   margin-right: auto;
+} 
+.motto{
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    font-family: 'Roboto', sans-serif;
+}

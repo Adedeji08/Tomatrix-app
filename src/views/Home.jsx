@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useRoutes } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "../assets/We harvest tomato.jpeg";
 
 const Home = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
-
   const [nav, setNav] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [shadow, setShadow] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
@@ -65,17 +61,17 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="pt-20">
       <motion.div ref={ref} animate={control} variants={list}>
         <div className="home-img">
           <motion.h4
             variants={item1}
-            className="text-sm text-center text-white pt-20 font-semibold 	tracking-wider"
+            className="text-sm text-center text-white pt-[20%] md:pt-[8%] font-semibold tracking-wider"
           >
             WELCOME TO TOMATRIX
           </motion.h4>
           <motion.h1
-            className="text-white font-bold w-[50%] ml-80 pt-2 10 text-3xl leading-10 h-[57%] break-words"
+            className="text-white font-bold w-[70%] text-center pt-9 10 text-base md:text-2xl  leading-10 h-[45%] break-words motto"
             variants={item2}
           >
             "Tomatrix Nigeria is a community-driven social enterprise with a
@@ -84,17 +80,18 @@ const Home = () => {
             actions."
           </motion.h1>
           <button
-            className="text-white border-2 text-lg border-gray-200 bg-green-500 rounded-full text-center ml-80 w-[12%] h-[11%] btn"
+            className="text-white border-2 text-lg border-gray-200 bg-green-500 rounded-full text-center ml-14 mt-10 md:mt-0 md:ml-40 md:w-[12%] w-[30%] h-[11%] btn"
             variants={item1}
           >
             Read more
           </button>
         </div>
       </motion.div>
-      <div className="grid md:grid-cols-2 w-full">
+      <motion.div variants={list} ref={ref} animate={control} className="grid md:grid-cols-3 w-full">
         {/* LEFT */}
-        <div className="shadow bg-red-500 rounded ml-5 mt-5 shadow-red-500 ">
-          <motion.p className="text-1xl font-medium pl-3" variants={item2}>
+        <div className="shadow bg-red-100 rounded ml-5 mt-5 shadow-red-500 h-full ">
+        <h3 className="text-2xl font-medium pl-3">Mission</h3>
+          <motion.p className="font-medium pl-3" variants={item2}>
             At Tomatrix Nigeria, we promote enterprising solutions to rural
             poverty. Our mission is to empower rural communities with resources
             to fight poverty by deconcentrating productive assets, information,
@@ -104,10 +101,41 @@ const Home = () => {
             responsibility and environmental sustainability, we strive to create
             a brighter future for all.
           </motion.p>
+          <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
+            <img
+              src={Image}
+              alt="image"
+              width={700}
+              className="rounded mt-5 shadow shadow-red-500"
+            />
+          </div>
         </div>
-        {/* RIGHT */}
-        <div></div>
-      </div>
+        {/* MIDDLE */}
+        <div className="shadow bg-red-100 rounded ml-5 md:mt-5 mt-10 shadow-red-500 h-[100%]">
+          <motion.h3 className="text-2xl font-medium pl-3" variants={item1}>Features</motion.h3>
+          <motion.ul className="font-sm pl-9 list-disc" variants={item1}>
+            <li>Community-driven social enterprise</li>
+            <li>Focus on reducing rural poverty</li>
+            <li>Addressing tomato postharvest loss in Nigeria</li>
+            <li>Innovative solutions to intractable challenges</li>
+            <li>System thinking toward agrifood system transformation</li>
+            <li>Bold actions towards achieving the vision of rural prosperity</li>
+          </motion.ul>
+        </div>
+        {/* Right */}
+        <div className="shadow bg-red-100 rounded ml-5  md:mt-5 mt-16 shadow-red-500 h-full">
+          <motion.h3 variants={item2} className="text-2xl text-red-500 font-medium pl-3">Our Mission Contributes to</motion.h3>
+          <motion.ul variants={item2} className="font-sm pl-9 list-disc">
+              <li>SDG 1: No Poverty: End poverty in all its forms everywhere.</li>
+              <li>SDG 2: Zero Hunger: Achieve food security, improve nutrition, and promote sustainable agriculture.</li>
+              <li>SDG 8: Decent Work and Economic Growth: Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.</li>
+              <li>SDG 10:  Reduced Inequalities: Reduce inequality within and among countries.</li>
+              <li>SDG 12: Responsible Consumption and Production: Ensure sustainable consumption and production patterns.</li>
+              <li>SDG 13: Climate Action: Take urgent action to combat climate change and its impacts.</li>
+        
+          </motion.ul>
+        </div>
+      </motion.div>
     </div>
   );
 };
