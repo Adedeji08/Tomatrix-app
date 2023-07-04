@@ -62,7 +62,8 @@ const Home = () => {
 
   return (
     <div className="pt-20">
-      <motion.div ref={ref} animate={control} variants={list}>
+       <motion.div ref={ref} animate={control} variants={list}>
+      <div ref={ref} animate={control} variants={list}>
         <div className="home-img">
           <motion.h4
             variants={item1}
@@ -86,7 +87,7 @@ const Home = () => {
             Read more
           </button>
         </div>
-      </motion.div>
+      </div>
       <motion.div variants={list} ref={ref} animate={control} className="grid md:grid-cols-3 w-full">
         {/* LEFT */}
         <div className="shadow bg-red-100 rounded ml-5 mt-5 shadow-red-500 h-full ">
@@ -135,6 +136,7 @@ const Home = () => {
         
           </motion.ul>
         </div>
+      </motion.div>
       </motion.div>
     </div>
   );
