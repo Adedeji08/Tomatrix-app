@@ -1,0 +1,28 @@
+.headers{
+    font-family: 'Nunito';
+}
+.headers:hover{
+    font-family: 'Nunito';
+    border-bottom: 2px solid #E92300;
+}
+.home-img{
+    height: 500px;
+    background-image: url(./assets/WeFarm.jpg);
+    background-repeat: no-repeat;
+    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    font-family: 'Roboto', sans-serif; 
+    border-radius: 24px 4px;
+}
+.btn:hover{
+    background: #E92300;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}   
