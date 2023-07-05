@@ -104,7 +104,7 @@ const Header = () => {
               <Link to="/aboutus">About Us</Link>
             </li>
             <li className="ml-10 text-sm font-semibold uppercase hover:border-b headers">
-              <Link to="/contactus">Buy</Link>
+              <Link to="/contactus">Buy Now</Link>
             </li>
           </ul>
 
@@ -142,7 +142,7 @@ const Header = () => {
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Let's build something legendary togther!
+              Promoting enterprising solutions, reducing food loss
               </p>
             </div>
           </div>
@@ -153,52 +153,18 @@ const Header = () => {
                   Home
                 </li>
               </Link>
-              <Link to="/#about">
+              <Link to="/aboutus">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   About Us
                 </li>
               </Link>
-              <Link to="/#skills">
+              <Link to="/contactus">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact Us
+                 Buy Now
                 </li>
               </Link>
             </ul>
-            <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                Let's Connect
-              </p>
-              <div className="flex items-center justify-between py-4 w-full sm:w-[80%]">
-                <Link
-                  to="https://www.linkedin.com/in/oluwadamilola-adedeji-aa9a34167/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </Link>
-                <Link
-                  to="https://github.com/Adedeji08"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </Link>
-                <Link to="/#contact" target="_blank" rel="noreferrer">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link to="/#about" target="_blank" rel="noreferrer">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>

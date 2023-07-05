@@ -8,9 +8,6 @@ const Footer = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
   const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
   useEffect(() => {
     if (inView) {
       control.start("vissible");
@@ -65,7 +62,7 @@ const Footer = () => {
         variants={list}
         ref={ref}
         animate={control}
-        className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-2 pl-5"
+        className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-5 pt-5"
       >
         <div>
           <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
@@ -125,17 +122,20 @@ const Footer = () => {
         <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
           NewsLetter
           </h1>
-         <motion.div variants={item2} className="mt-5">
-           <input
+          <motion.p variants={item1} className="text-white text-xs font-extralight">Subscribe to our Newsletter & Event right now to be updated.</motion.p>
+         <div  className="mt-5">
+           <motion.input
+                variants={item2}
                 type="email"
                 placeholder="Enter your email"
-                className="border border-red-400  h-10 pl-5 newsletter block"
+                className="border border-red-400 w-[65%] h-10 pl-5 newsletter block"
               />
               <button className="newsletter-btn border text-white border-white w-[65%] mt-5 bg-red-600  h-10">
                 Subscribe
               </button>
-         </motion.div>
+         </div>
         </div>
+        <p className="text-red-500 font-extralight text-xs mt-4">© Tomatrix 2023. All rights reserved.</p>
       </motion.div>
     </div>
   );
