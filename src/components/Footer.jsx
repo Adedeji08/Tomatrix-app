@@ -93,8 +93,13 @@ const Footer = () => {
               <span className="text-red-500">Email:</span> info@tmnigeria.com
             </li>
             <li>
-              <span className="text-red-500">Address:</span> Block B2, TIC
-              Building, Mani Road, Katsina, Nigeria
+              <span className="text-red-500">Address:</span>
+              <Link to="https://www.google.com/maps/search/Block+B2,+TIC+Building,+Mani+Road,+Katsina,+Nigeria/@12.975794,7.6316639,17z/data=!3m1!4b1?authuser=0&entry=ttu"
+                    target='_blank' rel='noreferrer'
+              >
+                {" "}
+                Block B2, TIC Building, Mani Road, Katsina, Nigeria
+              </Link>
             </li>
           </motion.ul>
         </div>
@@ -119,23 +124,30 @@ const Footer = () => {
         </div>
 
         <div>
-        <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
-          NewsLetter
+          <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
+            NewsLetter
           </h1>
-          <motion.p variants={item1} className="text-white text-xs font-extralight">Subscribe to our Newsletter & Event right now to be updated.</motion.p>
-         <div  className="mt-5">
-           <motion.input
-                variants={item1}
-                type="email"
-                placeholder="Enter your email"
-                className="border border-red-400 w-[65%] h-10 pl-5 newsletter block"
-              />
-              <button className="newsletter-btn border text-white border-white w-[65%] mt-5 bg-red-600  h-10">
-                Subscribe
-              </button>
-         </div>
+          <motion.p
+            variants={item1}
+            className="text-white text-xs font-extralight"
+          >
+            Subscribe to our Newsletter & Event right now to be updated.
+          </motion.p>
+          <div className="mt-5">
+            <motion.input
+              variants={item1}
+              type="email"
+              placeholder="Enter your email"
+              className="border border-red-400 w-[65%] h-10 pl-5 newsletter block"
+            />
+            <button className="newsletter-btn border text-white border-white w-[65%] mt-5 bg-red-600  h-10">
+              Subscribe
+            </button>
+          </div>
         </div>
-        <p className="text-red-500 font-extralight text-xs mt-4">© Tomatrix 2023. All rights reserved.</p>
+        <p className="text-red-500 font-extralight text-xs mt-4">
+          © Tomatrix 2023. All rights reserved.
+        </p>
       </motion.div>
     </div>
   );
