@@ -65,7 +65,7 @@ const Footer = () => {
         className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-10 pt-5"
       >
         <div>
-          <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
+          <h1 className="text-2xl font-black border-b-1 text-white border-red-500 footer__head">
             Testimony
           </h1>
           <motion.p
@@ -78,7 +78,7 @@ const Footer = () => {
           </motion.p>
         </div>
         <div>
-          <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
+          <h1 className="text-2xl font-black border-b-1 text-white border-red-500 footer__head">
             Contact Us
           </h1>
           <motion.ul
@@ -104,32 +104,32 @@ const Footer = () => {
           </motion.ul>
         </div>
         <div>
-          <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
+          <h1 className="text-2xl font-black border-b-1 text-white border-red-500  footer__head">
             Our Company
           </h1>
           <motion.ul
             variants={item1}
             className="pt-5 font-medium text-sm text-white leading-7"
           >
-            <li>
+            <li className="footer__list">
               <Link to="/"> Home</Link>
             </li>
-            <li>
+            <li className="footer__list">
               <Link to="/aboutus"> About Us</Link>
             </li>
-            <li>
+            <li className="footer__list">
               <Link to="/contactus">Buy Now</Link>
             </li>
           </motion.ul>
         </div>
 
         <div>
-          <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
+          <h1 className="text-2xl font-black border-b-1 text-white border-red-500 footer__head">
             NewsLetter
           </h1>
           <motion.p
             variants={item1}
-            className="text-white text-xs font-extralight"
+            className="text-white text-xs font-extralight pt-5"
           >
             Subscribe to our Newsletter & Event right now to be updated.
           </motion.p>

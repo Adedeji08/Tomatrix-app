@@ -159,8 +159,8 @@ const Contact = () => {
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-green-300 purchase-input"
-                      type="email"
-                      name="email"
+                      type="text"
+                      name="address"
                       required
                     />
                   </div>

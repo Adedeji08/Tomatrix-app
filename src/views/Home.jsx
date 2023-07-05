@@ -81,10 +81,12 @@ const Home = () => {
               actions."
             </motion.h1>
             <button
-              className="text-white border-2 text-lg border-gray-200 bg-green-500 rounded-full text-center ml-14 mt-10 md:mt-0 md:ml-40 md:w-[12%] w-[30%] h-[11%] btn"
+              className="text-white border-2 text-lg border-gray-200 bg-green-500 rounded-full text-center ml-14  mt-[30%] md:mt-0 md:ml-40 md:w-[12%] w-[30%] h-[11%] btn"
               variants={item1}
             >
+              <Link to='/aboutus'>
               Read more
+              </Link>
             </button>
           </div>
         </div>
@@ -96,7 +98,7 @@ const Home = () => {
         >
           {/* LEFT */}
           <div className="shadow bg-red-100 rounded ml-5 mt-5 shadow-red-500 h-full ">
-            <h3 className="text-2xl font-medium pl-3">Mission</h3>
+            <h3 className="text-2xl font-medium pl-3 text-red-500">Mission</h3>
             <motion.p className="font-medium pl-3" variants={item2}>
               At Tomatrix Nigeria, we promote enterprising solutions to rural
               poverty. Our mission is to empower rural communities with
@@ -117,11 +119,11 @@ const Home = () => {
             </div>
           </div>
           {/* MIDDLE */}
-          <div className="shadow bg-red-100 rounded ml-5 md:mt-5 mt-10 shadow-red-500 h-[100%]">
-            <motion.h3 className="text-2xl font-medium pl-3" variants={item1}>
+          <div className="shadow bg-red-100 rounded ml-5 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
+            <motion.h3 className="text-2xl font-medium pl-3 text-red-500" variants={item1}>
               Features
             </motion.h3>
-            <motion.ul className="font-sm pl-9 list-disc" variants={item1}>
+            <motion.ul className="font-sm pl-9 list-disc " variants={item1}>
               <li>Community-driven social enterprise</li>
               <li>Focus on reducing rural poverty</li>
               <li>Addressing tomato postharvest loss in Nigeria</li>
