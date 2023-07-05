@@ -82,7 +82,7 @@ const AboutUs = () => {
             </motion.h1>
           </div>
         </div>
-        <motion.div className="md:ml-20 ml-10" animate={control} variants={list}>
+        <motion.div className="md:ml-20 ml-10" ref={ref} animate={control} variants={list}>
           <motion.h1
             variants={item1}
             className="text-center text-3xl underline text-green-600 pt-7 font-extrabold"
@@ -167,12 +167,12 @@ const AboutUs = () => {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 mt-14 ml-10 gap-5">
+        <motion.div variants={list} animate={control} ref={ref} className="grid md:grid-cols-3 mt-14 ml-10 gap-5">
           <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Market Access
             </h1>
-            <motion.p>
+            <motion.p variants={item1}>
               We facilitate market opportunities that connect farmers with
               buyers as a key strategy to reduce postharvest losses in peak
               production seasons. Our offline channels and semi-formal platform
@@ -192,7 +192,7 @@ const AboutUs = () => {
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Farmers Outreach & Training
             </h1>
-            <motion.p>
+            <motion.p variants={item1}>
               Our Farmers Training & Aggregation model is designed to provide
               farmers with the necessary knowledge and skills to improve their
               agricultural productivity and improve their livelihoods. We
@@ -210,7 +210,7 @@ const AboutUs = () => {
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Access to Finance
             </h1>
-            <motion.p>
+            <motion.p variants={item1}>
               In addition to training, we also provide farmers with access to
               capital through our aggregation service, cooperative and
               agro-processing hub. We work with a network of farmers and buyers
@@ -222,10 +222,10 @@ const AboutUs = () => {
               system that benefits both farmers, consumers and our Nation.
             </motion.p>
           </div>
-        </div>
+        </motion.div>
 
         {/* TEAMS */}
-        <div className=" mt-14 ml-10">
+        <motion.div className=" mt-14 ml-10">
           <h1 className="text-center text-2xl  text-red-600  font-bold">
             TEAM
           </h1>
@@ -234,7 +234,7 @@ const AboutUs = () => {
               <h1 className="text-center text-md  text-green-600  font-bold">
                 John Babadara
               </h1>
-              <motion.p>
+              <motion.p variants={item1}>
                 A development practitioner, digital innovator, and seasoned
                 entrepreneur with a background in agriculture and rural
                 development. He brings expertise in digital agriculture,
@@ -247,7 +247,7 @@ const AboutUs = () => {
               <h1 className="text-center text-md  text-green-600  font-bold">
                 Olawale Adeoje
               </h1>
-              <motion.p>
+              <motion.p variants={item1}>
                 With a passion for community development and poverty
                 eradication, Olawale has a background in accounting and finance,
                 small business management, and production process. He leads our
@@ -260,7 +260,7 @@ const AboutUs = () => {
               <h1 className="text-center text-md  text-green-600  font-bold">
                 Precious Mayokun
               </h1>
-              <motion.p>
+              <motion.p variants={item1}>
                 She is a certified food scientist and serial entrepreneur with
                 expertise in using human-centred design (HCD) to meet the unique
                 needs of consumers. She leads the product development team and
@@ -269,7 +269,7 @@ const AboutUs = () => {
               </motion.p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );

@@ -170,9 +170,9 @@ const Home = () => {
         </motion.div>
        
         {/* DONATION */}
-        <div className="grid grid-cols-3 gap-3 ml-10 mt-14  rounded">
-          <div className="col-span-2 lg:col-span-2">
-            <h1 className="text-2xl text-green-600">
+        <div className="grid md:grid-cols-3 gap-3 ml-10 mt-14  rounded">
+          <div className="md:col-span-2 lg:col-span-2">
+            <h1 className="text-2xl text-green-600 md:mt-0 mt-7">
               Donation Link <br />
               <span className="text-black-500 font-normal text-base">
                 By supporting Tomatrix Nigeria, you are contributing to efforts
