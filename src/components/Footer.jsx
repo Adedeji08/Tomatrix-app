@@ -69,7 +69,7 @@ const Footer = () => {
             Testimony
           </h1>
           <motion.p
-            variants={item2}
+            variants={item1}
             className="pt-5 font-medium text-sm text-white leading-7"
           >
             Tomatrix Nigeria’s unwavering commitment to reducing rural poverty
@@ -103,7 +103,7 @@ const Footer = () => {
             Our Company
           </h1>
           <motion.ul
-            variants={item2}
+            variants={item1}
             className="pt-5 font-medium text-sm text-white leading-7"
           >
             <li>
@@ -125,7 +125,7 @@ const Footer = () => {
           <motion.p variants={item1} className="text-white text-xs font-extralight">Subscribe to our Newsletter & Event right now to be updated.</motion.p>
          <div  className="mt-5">
            <motion.input
-                variants={item2}
+                variants={item1}
                 type="email"
                 placeholder="Enter your email"
                 className="border border-red-400 w-[65%] h-10 pl-5 newsletter block"
