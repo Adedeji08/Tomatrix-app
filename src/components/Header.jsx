@@ -104,7 +104,7 @@ const Header = () => {
               <Link to="/aboutus">About Us</Link>
             </li>
             <li className="ml-10 text-sm font-semibold uppercase hover:border-b headers">
-              <Link to="/contactus">Contact Us</Link>
+              <Link to="/contactus">Buy</Link>
             </li>
           </ul>
 

@@ -168,42 +168,9 @@ const Home = () => {
             </motion.ul>
           </div>
         </motion.div>
-        <div className="grid grid-cols-3 gap-3 ml-10 mt-10">
-          <div className="col-span-2 lg:col-span-2">
-            <h1 className="text-2xl text-green-600">
-              Happy Customers​ (integrate testimonials/feedback)
-            </h1>
-            <motion.p variants={item1}>
-              Tomatrix Nigeria’s unwavering commitment to reducing rural poverty
-              and tackling tomato postharvest loss through innovative and bold
-              solutions has earned us the trust and admiration of our customers.
-            </motion.p>
-            <button className="newsletter-btn ml-5 border border-red-400 mt-5 w-[15%] h-10 text-center">
-                Purchase
-              </button>
-          </div>
-          <motion.div variants={item2} className="right">
-            <h2 className="text-1xl font-bold text-green-600 mt-5">
-              Subscribe to Newsletter
-            </h2>
-            <p>
-              Enter your email address to register for our newsletter
-              subscription!
-            </p>
-            <div className="input-container mt-5">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="border border-red-400 h-10 text-center newsletter"
-              />
-              <button className="newsletter-btn ml-5 border border-red-400 w-40 h-10 text-center">
-                Subscribe
-              </button>
-            </div>
-          </motion.div>
-        </div>
+       
         {/* DONATION */}
-        <div className="grid grid-cols-3 gap-3 ml-10 mt-14  bg-red-100 shadow-xl rounded pl-7 shadow-red-300">
+        <div className="grid grid-cols-3 gap-3 ml-10 mt-14  rounded">
           <div className="col-span-2 lg:col-span-2">
             <h1 className="text-2xl text-green-600">
               Donation Link <br />
