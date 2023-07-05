@@ -82,7 +82,7 @@ const AboutUs = () => {
             </motion.h1>
           </div>
         </div>
-        <motion.div className="ml-20" animate={control} variants={list}>
+        <motion.div className="md:ml-20 ml-10" animate={control} variants={list}>
           <motion.h1
             variants={item1}
             className="text-center text-3xl underline text-green-600 pt-7 font-extrabold"
@@ -102,7 +102,7 @@ const AboutUs = () => {
           <h2 className="text-2xl font-bold text-green-600 mt-8 underline">
             Why Tomato?
           </h2>
-          <div className="flex flex-cols">
+          <div className="md:flex md:flex-cols">
             <motion.ul variants={item1} className="list-disc">
               <li>
                 Nigeria is the second largest producer of tomatoes in Africa
@@ -124,14 +124,14 @@ const AboutUs = () => {
                 meet the supply deficit.
               </li>
             </motion.ul>
-            <motion.p variants={item2}>
+            <motion.p className="xs:mt-5 mt-5" variants={item2}>
               Through system thinking, bold ideas and community initiatives, we
               will end tomato postharvest losses in Nigeria as a proof of
               concept for net zero food loss strategy across diverse crop value
               chains
             </motion.p>
           </div>
-          <div className="grid grid-cols-4 gap-6 mt-10">
+          <div className="grid md:grid-cols-4 gap-6 mt-10">
             <div className="rounded">
               <img
                 style={{ height: "300px" }}
@@ -166,7 +166,8 @@ const AboutUs = () => {
             </div>
           </div>
         </motion.div>
-        <div className="grid grid-cols-3 mt-14 ml-10 gap-5">
+
+        <div className="grid md:grid-cols-3 mt-14 ml-10 gap-5">
           <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Market Access
@@ -228,8 +229,8 @@ const AboutUs = () => {
           <h1 className="text-center text-2xl  text-red-600  font-bold">
             TEAM
           </h1>
-          <div className="grid grid-cols-3 gap-5">
-            <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="grid md:grid-cols-3 gap-5">
+            <div className=" w-full h-full shadow rounded-xl p-4">
               <h1 className="text-center text-md  text-green-600  font-bold">
                 John Babadara
               </h1>
@@ -242,7 +243,7 @@ const AboutUs = () => {
                 engagement to drive the success of Tomatrix Nigeria.
               </motion.p>
             </div>
-            <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+            <div className=" w-full h-full shadow rounded-xl p-4">
               <h1 className="text-center text-md  text-green-600  font-bold">
                 Olawale Adeoje
               </h1>
@@ -255,7 +256,7 @@ const AboutUs = () => {
                 improve the livelihoods of rural farmers in Nigeria.
               </motion.p>
             </div>
-            <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+            <div className=" w-full h-full shadow rounded-xl p-4">
               <h1 className="text-center text-md  text-green-600  font-bold">
                 Precious Mayokun
               </h1>

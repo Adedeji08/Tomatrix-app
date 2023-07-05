@@ -20,7 +20,9 @@ function App() {
   return (
     <div>
       {loading ? (
-        <ClipLoader color="#ffffff" className="bg-red-500 m-[20%] ml-[600px]" loading={loading} size={50} />
+        <div className="load">
+        <ClipLoader color="#ffffff" className="bg-red-500 mt-[250%]" loading={loading} size={50} />
+        </div>
       ) : (
         <div>
           <Header />

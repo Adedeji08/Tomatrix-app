@@ -85,7 +85,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
+        <div className="max-w-[1240px]  px-2 py-16 w-full ">
           <h2 className="py-4 text-xl tracking-widest uppercase text-[#6bed12]">
             Make a purchase
           </h2>

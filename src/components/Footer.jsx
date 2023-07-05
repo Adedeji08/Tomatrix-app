@@ -62,7 +62,7 @@ const Footer = () => {
         variants={list}
         ref={ref}
         animate={control}
-        className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-5 pt-5"
+        className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-10 pt-5"
       >
         <div>
           <h1 className="text-2xl font-black border-b-1 text-white border-red-500">
