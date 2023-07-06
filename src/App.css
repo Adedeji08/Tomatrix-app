@@ -79,32 +79,8 @@ ul{
 label{
     font-family: 'Nunito';
 }
-.app__sttop{
-    background: green;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    margin-top: -60px;
-    right: 50px; 
-    color: white;
-    opacity: 0;
-    /* transition: $trans;
-    pointer-events: none; */
+
   
-    &.active {
-      opacity: 1;
-      pointer-events: visible;
-      padding-left: 15px;
-      padding-top: 15px;
-    }
-  
-    a {
-      height: 100%;
-      width: 100%;
-    }
-  }
   .loader{
     width: 30px;
     height: 30px;
@@ -127,3 +103,31 @@ label{
     font-family: 'Nunito';
     border-bottom: 2px solid #E92300;
   }
+
+  /* .app__sttop{
+     background: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -60px;
+    right: 50px; 
+    color: white;
+    opacity: 0; 
+     transition: $trans;
+    pointer-events: none; 
+  
+  }
+   */
+  /* &.active {
+    opacity: 1;
+    pointer-events: visible;
+    padding-left: 15px;
+    padding-top: 15px;
+  } */
+
+  /* a {
+    height: 100%;
+    width: 100%;
+  } */
