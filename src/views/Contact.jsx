@@ -1,20 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, {  useEffect} from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Image from "../assets/Product Front View.jpeg";
 
 const Contact = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
-  const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
+
+
   useEffect(() => {
     if (inView) {
       control.start("vissible");
@@ -97,7 +90,7 @@ const Contact = () => {
                   <img
                     className="rounded-xl hover:scale-105 ease-in duration-300"
                     src={Image}
-                    alt="image"
+                    alt="tomatrix"
                   />
                 </div>
                 <div>
@@ -111,7 +104,7 @@ const Contact = () => {
             </div>
 
             {/* right and form */}
-            <div className="col-span-3 w-full h-auto shadow-xl bg-red-100 shadow-gray-400 rounded-xl lg:p-4">
+            <div className="col-span-3 w-full h-auto shadow-xl bg-red-100 shadow-gray-400 rounded-xl lg:p-4 md:ml-5">
               <div className="p-4">
                 <form
                   action="https://getform.io/f/4ab5ae01-8a7f-492d-a978-d530457bcd45"

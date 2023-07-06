@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "../assets/We harvest tomato.jpeg";
+
 
 const Footer = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
-  const [nav, setNav] = useState(false);
+
   useEffect(() => {
     if (inView) {
       control.start("vissible");
@@ -40,29 +40,29 @@ const Footer = () => {
       x: -100,
     },
   };
-  const item2 = {
-    vissible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        type: "spring",
-        stifness: 300,
-        damping: 24,
-        delay: 0.5,
-      },
-    },
-    hidden: {
-      opacity: 0,
-      x: 100,
-    },
-  };
+  // const item2 = {
+  //   vissible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       type: "spring",
+  //       stifness: 300,
+  //       damping: 24,
+  //       delay: 0.5,
+  //     },
+  //   },
+  //   hidden: {
+  //     opacity: 0,
+  //     x: 100,
+  //   },
+  // };
   return (
     <div className="mt-14">
       <motion.div
         variants={list}
         ref={ref}
         animate={control}
-        className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-10 pt-5"
+        className="bg-[#0d3c00] grid lg:grid-cols-4 grid-cols-1 pl-5 pt-5"
       >
         <div>
           <h1 className="text-2xl font-black border-b-1 text-white border-red-500 footer__head">
@@ -70,7 +70,7 @@ const Footer = () => {
           </h1>
           <motion.p
             variants={item1}
-            className="pt-5 font-medium text-sm text-white leading-7"
+            className="pt-5 font-medium text-sm text-white leading-7 pr-4 text-justify"
           >
             Tomatrix Nigeria’s unwavering commitment to reducing rural poverty
             and tackling tomato postharvest loss through innovative and bold

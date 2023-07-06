@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, {  useEffect } from "react";
+
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "../assets/Product Front View.jpeg";
@@ -10,10 +10,7 @@ import Image3 from "../assets/Where are buyers.jpeg";
 const AboutUs = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
-  const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
+
   useEffect(() => {
     if (inView) {
       control.start("vissible");
@@ -82,7 +79,7 @@ const AboutUs = () => {
             </motion.h1>
           </div>
         </div>
-        <motion.div className="md:ml-20 ml-10" ref={ref} animate={control} variants={list}>
+        <motion.div className="md:ml-20 ml-5 mr-5 text-justify" ref={ref} animate={control} variants={list}>
           <motion.h1
             variants={item1}
             className="text-center text-3xl underline text-green-600 pt-7 font-extrabold"
@@ -136,7 +133,7 @@ const AboutUs = () => {
               <img
                 style={{ height: "300px" }}
                 src={Image}
-                alt="image"
+                alt="tomatrix"
                 className="shadow rounded-full shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
@@ -144,7 +141,7 @@ const AboutUs = () => {
               <img
                 style={{ height: "300px" }}
                 src={Image1}
-                alt="image"
+                alt="tomatrix"
                 className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
@@ -152,7 +149,7 @@ const AboutUs = () => {
               <img
                 style={{ height: "300px" }}
                 src={Image2}
-                alt="image"
+                alt="tomatrix"
                 className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
@@ -160,14 +157,14 @@ const AboutUs = () => {
               <img
                 style={{ height: "300px" }}
                 src={Image3}
-                alt="image"
+                alt="tomatrix"
                 className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
           </div>
         </motion.div>
 
-        <motion.div variants={list} animate={control} ref={ref} className="grid md:grid-cols-3 mt-14 ml-10 gap-5">
+        <motion.div variants={list} animate={control} ref={ref} className="grid md:grid-cols-3 mt-14 ml-5 mr-5 text-justify gap-5">
           <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Market Access
@@ -225,7 +222,7 @@ const AboutUs = () => {
         </motion.div>
 
         {/* TEAMS */}
-        <motion.div className=" mt-14 ml-10">
+        <motion.div className=" mt-14 ml-5 mr-5 text-justify">
           <h1 className="text-center text-2xl  text-red-600  font-bold">
             TEAM
           </h1>

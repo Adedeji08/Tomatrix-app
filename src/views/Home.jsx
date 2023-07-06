@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -7,10 +7,7 @@ import Image from "../assets/We harvest tomato.jpeg";
 const Home = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
-  const [nav, setNav] = useState(false);
-  const handleNav = () => {
-    setNav(!nav);
-  };
+
   useEffect(() => {
     if (inView) {
       control.start("vissible");
@@ -97,7 +94,7 @@ const Home = () => {
           className="grid md:grid-cols-3 w-full"
         >
           {/* LEFT */}
-          <div className="shadow bg-red-100 rounded ml-5 mt-5 shadow-red-500 h-full ">
+          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-red-500 h-full ">
             <h3 className="text-2xl font-medium pl-3 text-red-500">Mission</h3>
             <motion.p className="font-medium pl-3" variants={item2}>
               At Tomatrix Nigeria, we promote enterprising solutions to rural
@@ -112,14 +109,14 @@ const Home = () => {
             <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
               <img
                 src={Image}
-                alt="image"
+                alt="tomatrix"
                 width={700}
                 className="rounded mt-5 shadow shadow-red-500"
               />
             </div>
           </div>
           {/* MIDDLE */}
-          <div className="shadow bg-red-100 rounded ml-5 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
+          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
             <motion.h3 className="text-2xl font-medium pl-3 text-red-500" variants={item1}>
               Features
             </motion.h3>
@@ -135,7 +132,7 @@ const Home = () => {
             </motion.ul>
           </div>
           {/* Right */}
-          <div className="shadow bg-red-100 rounded ml-5  md:mt-5 mt-16 shadow-red-500 h-full">
+          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-red-500 h-full">
             <motion.h3
               variants={item2}
               className="text-2xl text-red-500 font-medium pl-3"
@@ -172,7 +169,7 @@ const Home = () => {
         </motion.div>
        
         {/* DONATION */}
-        <div className="grid md:grid-cols-3 gap-3 ml-10 mt-14  rounded">
+        <div className="grid md:grid-cols-3 gap-3 ml-5 mr-5 text-justify mt-14  rounded">
           <div className="md:col-span-2 lg:col-span-2">
             <h1 className="text-2xl text-green-600 md:mt-0 mt-7">
               Donation Link <br />
