@@ -121,7 +121,7 @@ const AboutUs = () => {
                 meet the supply deficit.
               </li>
             </motion.ul>
-            <motion.p className="xs:mt-5 mt-5" variants={item2}>
+            <motion.p className="xs:mt-3 mt-1" variants={item2}>
               Through system thinking, bold ideas and community initiatives, we
               will end tomato postharvest losses in Nigeria as a proof of
               concept for net zero food loss strategy across diverse crop value
@@ -165,7 +165,7 @@ const AboutUs = () => {
         </motion.div>
 
         <motion.div variants={list} animate={control} ref={ref} className="grid md:grid-cols-3 mt-14 ml-5 mr-5 text-justify gap-5">
-          <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          {/* <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Market Access
             </h1>
@@ -184,8 +184,30 @@ const AboutUs = () => {
               business, increase their sales revenue and reduce postharvest
               loss.
             </motion.p>
+          </div> */}
+          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-red-500 h-full ">
+            <h3 className="text-2xl font-medium pl-3 text-red-500">Mission</h3>
+            <motion.p className="font-medium pl-3" variants={item2}>
+              At Tomatrix Nigeria, we promote enterprising solutions to rural
+              poverty. Our mission is to empower rural communities with
+              resources to fight poverty by deconcentrating productive assets,
+              information, innovation, finance, and sustainable solutions. We
+              are dedicated to fostering economic growth and improving the
+              livelihoods of farmers and communities across Nigeria. With a
+              focus on social responsibility and environmental sustainability,
+              we strive to create a brighter future for all.
+            </motion.p>
+            <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
+              <img
+                src={Image}
+                alt="tomatrix"
+                width={700}
+                className="rounded mt-5 shadow shadow-red-500"
+              />
+            </div>
           </div>
-          <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+
+          {/* <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Farmers Outreach & Training
             </h1>
@@ -202,8 +224,24 @@ const AboutUs = () => {
               hands-on and context-specific to ensure that farmers can apply
               what they learn on their farms.
             </motion.p>
+          </div> */}
+          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
+            <motion.h3 className="text-2xl font-medium pl-3 text-red-500" variants={item1}>
+              Features
+            </motion.h3>
+            <motion.ul className="font-sm pl-9 list-disc " variants={item1}>
+              <li>Community-driven social enterprise</li>
+              <li>Focus on reducing rural poverty</li>
+              <li>Addressing tomato postharvest loss in Nigeria</li>
+              <li>Innovative solutions to intractable challenges</li>
+              <li>System thinking toward agrifood system transformation</li>
+              <li>
+                Bold actions towards achieving the vision of rural prosperity
+              </li>
+            </motion.ul>
           </div>
-          <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+
+          {/* <div className=" w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <h1 className="text-center text-2xl underline text-green-600  font-bold">
               Access to Finance
             </h1>
@@ -218,6 +256,41 @@ const AboutUs = () => {
               technology and markets, we aim to create a sustainable agrifood
               system that benefits both farmers, consumers and our Nation.
             </motion.p>
+          </div> */}
+
+<div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-red-500 h-full">
+            <motion.h3
+              variants={item2}
+              className="text-2xl text-red-500 font-medium pl-3"
+            >
+              Our Mission Contributes to
+            </motion.h3>
+            <motion.ul variants={item2} className="font-sm pl-9 list-disc">
+              <li>
+                SDG 1: No Poverty: End poverty in all its forms everywhere.
+              </li>
+              <li>
+                SDG 2: Zero Hunger: Achieve food security, improve nutrition,
+                and promote sustainable agriculture.
+              </li>
+              <li>
+                SDG 8: Decent Work and Economic Growth: Promote sustained,
+                inclusive, and sustainable economic growth, full and productive
+                employment, and decent work for all.
+              </li>
+              <li>
+                SDG 10: Reduced Inequalities: Reduce inequality within and among
+                countries.
+              </li>
+              <li>
+                SDG 12: Responsible Consumption and Production: Ensure
+                sustainable consumption and production patterns.
+              </li>
+              <li>
+                SDG 13: Climate Action: Take urgent action to combat climate
+                change and its impacts.
+              </li>
+            </motion.ul>
           </div>
         </motion.div>
 

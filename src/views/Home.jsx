@@ -169,7 +169,7 @@ const Home = () => {
         </motion.div>
        
         {/* DONATION */}
-        <div className="grid md:grid-cols-3 gap-3 ml-5 mr-5 text-justify mt-14  rounded">
+        {/* <div className="grid md:grid-cols-3 gap-3 ml-5 mr-5 text-justify mt-14  rounded">
           <div className="md:col-span-2 lg:col-span-2">
             <h1 className="text-2xl text-green-600 md:mt-0 mt-7">
               Donation Link <br />
@@ -219,7 +219,7 @@ const Home = () => {
               <br /> GTB: Swiss Code
             </p>
           </motion.div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );
