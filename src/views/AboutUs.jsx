@@ -1,4 +1,4 @@
-import React, {  useEffect } from "react";
+import React, {  useEffect, useState } from "react";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -60,6 +60,21 @@ const AboutUs = () => {
     },
   };
 
+
+   // const images = [Image, Image1, Image2, Image3]; // Import your image paths here
+
+  // const [currentIndex, setCurrentIndex] = useState(0);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //   }, 8000); // Change image every 3 seconds
+
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
+
   return (
     <div className="pt-20">
       <motion.div ref={ref} animate={control} variants={list}>
@@ -79,6 +94,7 @@ const AboutUs = () => {
             </motion.h1>
           </div>
         </div>
+        <div></div>
         <motion.div className="md:ml-20 ml-5 mr-5 text-justify" ref={ref} animate={control} variants={list}>
           <motion.h1
             variants={item1}
@@ -128,13 +144,13 @@ const AboutUs = () => {
               chains
             </motion.p>
           </div>
-          <div className="grid md:grid-cols-4 gap-6 mt-10">
-            <div className="rounded">
+          <div className="grid md:grid-cols-4 gap-6 mt-10 justify-center justify-items-center align-baseline">
+            <div className="rounded ">
               <img
                 style={{ height: "300px" }}
                 src={Image}
                 alt="tomatrix"
-                className="shadow rounded-full shadow-gray-300 hover:scale-105 ease-in duration-300"
+                className="shadow rounded-lg shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
             <div className="rounded">
@@ -142,7 +158,7 @@ const AboutUs = () => {
                 style={{ height: "300px" }}
                 src={Image1}
                 alt="tomatrix"
-                className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
+                className="rounded-lg shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
             <div className="rounded">
@@ -150,7 +166,7 @@ const AboutUs = () => {
                 style={{ height: "300px" }}
                 src={Image2}
                 alt="tomatrix"
-                className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
+                className="rounded-lg shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
             <div className="rounded">
@@ -158,9 +174,10 @@ const AboutUs = () => {
                 style={{ height: "300px" }}
                 src={Image3}
                 alt="tomatrix"
-                className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
+                className="rounded-lg shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
               />
             </div>
+          
           </div>
         </motion.div>
 

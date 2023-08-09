@@ -94,7 +94,8 @@ const Home = () => {
           className="grid md:grid-cols-3 w-full"
         >
           {/* LEFT */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-red-500 h-full ">
+          
+          <div className="shadow bg-white rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-red-100 h-full ">
             <h3 className="text-2xl font-medium pl-3 text-red-500">Mission</h3>
             <motion.p className="font-medium pl-3" variants={item2}>
               At Tomatrix Nigeria, we promote enterprising solutions to rural
@@ -106,17 +107,17 @@ const Home = () => {
               focus on social responsibility and environmental sustainability,
               we strive to create a brighter future for all.
             </motion.p>
-            <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
+            {/* <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
               <img
                 src={Image}
                 alt="tomatrix"
                 width={700}
                 className="rounded mt-5 shadow shadow-red-500"
               />
-            </div>
+            </div> */}
           </div>
           {/* MIDDLE */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
+          <div className="shadow bg-white rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-red-100 md:h-[50%]">
             <motion.h3 className="text-2xl font-medium pl-3 text-red-500" variants={item1}>
               Features
             </motion.h3>
@@ -132,7 +133,7 @@ const Home = () => {
             </motion.ul>
           </div>
           {/* Right */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-red-500 h-full">
+          <div className="shadow bg-white rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-red-100 h-full">
             <motion.h3
               variants={item2}
               className="text-2xl text-red-500 font-medium pl-3"
@@ -169,7 +170,7 @@ const Home = () => {
         </motion.div>
        
         {/* DONATION */}
-        <div className="grid md:grid-cols-3 gap-3 ml-5 mr-5 text-justify mt-14  rounded">
+        {/* <div className="grid md:grid-cols-3 gap-3 ml-5 mr-5 text-justify mt-14  rounded">
           <div className="md:col-span-2 lg:col-span-2">
             <h1 className="text-2xl text-green-600 md:mt-0 mt-7">
               Donation Link <br />
@@ -219,7 +220,7 @@ const Home = () => {
               <br /> GTB: Swiss Code
             </p>
           </motion.div>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );
