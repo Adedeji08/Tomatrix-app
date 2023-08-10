@@ -87,7 +87,7 @@ const Header = () => {
   return (
     <div
       className={
-        bgColor ? ` w-full fixed bg-red-200 shadow z-[100]` : `shadow fixed w-full h-20 z-[100]`
+        bgColor ? ` w-full fixed bg-gray-200 shadow z-[100]` : `shadow fixed w-full h-20 z-[100]`
       }
       // style={{ background: `${navBg}` }}
     >
