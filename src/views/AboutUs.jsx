@@ -225,7 +225,7 @@ const AboutUs = () => {
               what they learn on their farms.
             </motion.p>
           </div> */}
-          <div className="shadow bg-white-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-white-500 md:h-[50%]">
+          <div className="shadow bg-white-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-white-500 md:h-full">
             <motion.h3 className="text-2xl font-medium pl-3 text-white-500" variants={item1}>
               Features
             </motion.h3>
