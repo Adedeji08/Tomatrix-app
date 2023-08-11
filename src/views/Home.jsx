@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "../assets/We harvest tomato.jpeg";
+import Image from "../assets/WhatsApp Image 2021-11-23 at 9.32.32 PM (1).jpeg";
+import Image1 from "../assets/Tomatrix Cover.jpeg";
+import Image2 from "../assets/WhatsApp Image 2021-11-23 at 9.32.32 PM (1).jpeg";
 
 const Home = () => {
   const control = useAnimation();
@@ -87,139 +89,68 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <motion.div
-          variants={list}
-          ref={ref}
-          animate={control}
-          className="grid md:grid-cols-3 w-full"
-        >
-          {/* LEFT */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-red-500 h-full ">
-            <h3 className="text-2xl font-medium pl-3 text-red-500">Mission</h3>
-            <motion.p className="font-medium pl-3" variants={item2}>
-              At Tomatrix Nigeria, we promote enterprising solutions to rural
-              poverty. Our mission is to empower rural communities with
-              resources to fight poverty by deconcentrating productive assets,
-              information, innovation, finance, and sustainable solutions. We
-              are dedicated to fostering economic growth and improving the
-              livelihoods of farmers and communities across Nigeria. With a
-              focus on social responsibility and environmental sustainability,
-              we strive to create a brighter future for all.
-            </motion.p>
-            <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
-              <img
-                src={Image}
-                alt="tomatrix"
-                width={700}
-                className="rounded mt-5 shadow shadow-red-500"
-              />
+          <motion.div ref={ref} animate={control} variants={list}>
+            <motion.div className=" mt-14 ml-5 mr-5 text-justify">
+              {/* first card */}
+              <div className="grid md:grid-cols-3 gap-5">
+                <div className=" w-full h-full shadow rounded-xl p-4">
+                  <div className="rounded mb-5">
+                    <img
+                      style={{ height: "300px" }}
+                      src={Image}
+                      alt="tomatrix"
+                      className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
+                    />
+                  </div>
+                <motion.p variants={item1}>
+                  A development practitioner, digital innovator, and seasoned
+                  entrepreneur with a background in agriculture and rural
+                  development. He brings expertise in digital agriculture,
+                  circularity, system thinking, policy, agrifood systems
+                  transformation, social enterprise development and community
+                  engagement to drive the success of Tomatrix Nigeria.
+                </motion.p>
+              </div>
+              {/* second card */}
+              <div className=" w-full h-full shadow rounded-xl p-4">
+                <div className="rounded mb-5">
+                  <img
+                    style={{ height: "300px" }}
+                    src={Image1}
+                    alt="tomatrix"
+                    className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
+                  />
+                </div>
+                <motion.p variants={item1}>
+                  With a passion for community development and poverty
+                  eradication, Olawale has a background in accounting and finance,
+                  small business management, and production process. He leads our
+                  team in identifying priority, fund allocation and developing
+                  innovative solutions to reduce tomato postharvest loss and
+                  improve the livelihoods of rural farmers in Nigeria.
+                </motion.p>
+              </div>
+              {/* third card */}
+              <div className=" w-full h-full shadow rounded-xl p-4">
+                <div className="rounded mb-5">
+                <img
+                  style={{ height: "300px" }}
+                  src={Image2}
+                  alt="tomatrix"
+                  className="rounded-full shadow shadow-gray-300 hover:scale-105 ease-in duration-300"
+                />
+              </div>
+                <motion.p variants={item1}>
+                  She is a certified food scientist and serial entrepreneur with
+                  expertise in using human-centred design (HCD) to meet the unique
+                  needs of consumers. She leads the product development team and
+                  works closely with our clients to understand their needs and
+                  develop customized solutions that meet their requirements.
+                </motion.p>
+              </div>
             </div>
-          </div>
-          {/* MIDDLE */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
-            <motion.h3 className="text-2xl font-medium pl-3 text-red-500" variants={item1}>
-              Features
-            </motion.h3>
-            <motion.ul className="font-sm pl-9 list-disc " variants={item1}>
-              <li>Community-driven social enterprise</li>
-              <li>Focus on reducing rural poverty</li>
-              <li>Addressing tomato postharvest loss in Nigeria</li>
-              <li>Innovative solutions to intractable challenges</li>
-              <li>System thinking toward agrifood system transformation</li>
-              <li>
-                Bold actions towards achieving the vision of rural prosperity
-              </li>
-            </motion.ul>
-          </div>
-          {/* Right */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-red-500 h-full">
-            <motion.h3
-              variants={item2}
-              className="text-2xl text-red-500 font-medium pl-3"
-            >
-              Our Mission Contributes to
-            </motion.h3>
-            <motion.ul variants={item2} className="font-sm pl-9 list-disc">
-              <li>
-                SDG 1: No Poverty: End poverty in all its forms everywhere.
-              </li>
-              <li>
-                SDG 2: Zero Hunger: Achieve food security, improve nutrition,
-                and promote sustainable agriculture.
-              </li>
-              <li>
-                SDG 8: Decent Work and Economic Growth: Promote sustained,
-                inclusive, and sustainable economic growth, full and productive
-                employment, and decent work for all.
-              </li>
-              <li>
-                SDG 10: Reduced Inequalities: Reduce inequality within and among
-                countries.
-              </li>
-              <li>
-                SDG 12: Responsible Consumption and Production: Ensure
-                sustainable consumption and production patterns.
-              </li>
-              <li>
-                SDG 13: Climate Action: Take urgent action to combat climate
-                change and its impacts.
-              </li>
-            </motion.ul>
-          </div>
-        </motion.div>
-       
-        {/* DONATION */}
-        {/* <div className="grid md:grid-cols-3 gap-3 ml-5 mr-5 text-justify mt-14  rounded">
-          <div className="md:col-span-2 lg:col-span-2">
-            <h1 className="text-2xl text-green-600 md:mt-0 mt-7">
-              Donation Link <br />
-              <span className="text-black-500 font-normal text-base">
-                By supporting Tomatrix Nigeria, you are contributing to efforts
-                to reduce rural poverty in Nigeria.
-              </span>
-            </h1>
-            <motion.ul variants={item1} className="list-disc">
-              <li>
-                With Tomatrix Nigeria's focus on reducing rural poverty and
-                tomato postharvest loss, you can be sure that your investment is
-                going towards a specific and urgent issue.
-              </li>
-              <li>
-                As a community-driven social enterprise, Tomatrix Nigeria is
-                committed to involving and empowering local communities in their
-                work, ensuring sustainable and long-term impact.
-              </li>
-              <li>
-                Tomatrix Nigeria's innovative and enterprising solutions mean
-                that your support will go towards cutting-edge approaches to
-                reducing postharvest loss and alleviating poverty
-              </li>
-              <li>
-                With a bold and ambitious vision, Tomatrix Nigeria is committed
-                to taking significant action to address the challenges facing
-                Nigerian farmers and communities. By supporting us, you can be a
-                part of this important work
-              </li>
-            </motion.ul>
-          </div>
-          <motion.div variants={item2} className="right">
-            <h2 className="text-1xl font-bold text-green-600 underline">
-              Account Details
-            </h2>
-            <p className="text-base font-bold text-red-600">
-              Integrate Tomatrix Account (Naira and Domiciliary)
-            </p>
-            <p className="text-sm font-medium tracking-widest">
-              Tomatrix Account (Naira):
-              <br />
-              GTB: 0690880064
-            </p>
-            <p className="text-sm font-medium tracking-widest">
-              Tomatrix Account (Dollar):
-              <br /> GTB: Swiss Code
-            </p>
           </motion.div>
-        </div> */}
+          </motion.div>
       </motion.div>
     </div>
   );

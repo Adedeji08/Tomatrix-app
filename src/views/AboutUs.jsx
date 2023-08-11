@@ -99,7 +99,7 @@ const AboutUs = () => {
           <h2 className="text-2xl font-bold text-green-600 mt-8 underline">
             Why Tomato?
           </h2>
-          <div className="md:flex md:flex-cols">
+          <div className="flex flex-col">
             <motion.ul variants={item1} className="list-disc">
               <li>
                 Nigeria is the second largest producer of tomatoes in Africa
@@ -185,8 +185,8 @@ const AboutUs = () => {
               loss.
             </motion.p>
           </div> */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-red-500 h-full ">
-            <h3 className="text-2xl font-medium pl-3 text-red-500">Mission</h3>
+          <div className="shadow bg-white-100 rounded ml-5 mr-5 text-justify mt-5 pr-3 shadow-white-500 h-full ">
+            <h3 className="text-2xl font-medium pl-3 text-white-500">Mission</h3>
             <motion.p className="font-medium pl-3" variants={item2}>
               At Tomatrix Nigeria, we promote enterprising solutions to rural
               poverty. Our mission is to empower rural communities with
@@ -198,12 +198,12 @@ const AboutUs = () => {
               we strive to create a brighter future for all.
             </motion.p>
             <div className="w-[80%] mission-img hover:scale-105 ease-in duration-300">
-              <img
+              {/* <img
                 src={Image}
                 alt="tomatrix"
                 width={700}
-                className="rounded mt-5 shadow shadow-red-500"
-              />
+                className="rounded mt-5 shadow shadow-gray-500"
+              /> */}
             </div>
           </div>
 
@@ -225,8 +225,8 @@ const AboutUs = () => {
               what they learn on their farms.
             </motion.p>
           </div> */}
-          <div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-red-500 md:h-[50%]">
-            <motion.h3 className="text-2xl font-medium pl-3 text-red-500" variants={item1}>
+          <div className="shadow bg-white-100 rounded ml-5 mr-5 text-justify pr-3 md:mt-5 mt-10 shadow-white-500 md:h-[50%]">
+            <motion.h3 className="text-2xl font-medium pl-3 text-white-500" variants={item1}>
               Features
             </motion.h3>
             <motion.ul className="font-sm pl-9 list-disc " variants={item1}>
@@ -258,10 +258,10 @@ const AboutUs = () => {
             </motion.p>
           </div> */}
 
-<div className="shadow bg-red-100 rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-red-500 h-full">
+<div className="shadow bg-white-100 rounded ml-5 mr-5 text-justify pr-3  md:mt-5 mt-16 shadow-white-500 h-full">
             <motion.h3
               variants={item2}
-              className="text-2xl text-red-500 font-medium pl-3"
+              className="text-2xl text-white-500 font-medium pl-3"
             >
               Our Mission Contributes to
             </motion.h3>
